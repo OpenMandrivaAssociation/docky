@@ -2,7 +2,7 @@
 
 Name:           docky
 Version:        2.1.4
-Release:        %mkrel 2
+Release:        3
 Summary:        Advanced shortcut bar written in Mono
 
 Group:          Graphical desktop/GNOME
@@ -56,13 +56,11 @@ for developing applications that use %{name}.
 
 %prep
 %setup -q
-#patch0 -p1
-#patch1 -p1
 
 
 %build
-%configure
-make %{?_smp_mflags}
+%configure2_5x
+%make
 
 
 %install
@@ -87,21 +85,6 @@ echo "X-GNOME-Autostart-enabled=false" >> \
 %find_lang %{name}
 
 
-%post
-touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
-
-
-%postun
-if [ $1 -eq 0 ] ; then
-    touch --no-create %{_datadir}/icons/hicolor &>/dev/null
-    gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
-fi
-
-
-%posttrans
-gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
-
-
 %files -f %{name}.lang
 %doc AUTHORS COPYING COPYRIGHT NEWS
 %{_bindir}/%{name}
@@ -121,30 +104,4 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_libdir}/pkgconfig/docky.services.pc
 %{_libdir}/pkgconfig/docky.widgets.pc
 %{_libdir}/pkgconfig/docky.items.pc
-
-
-
-
-
-%changelog
-
-* Fri Jan 11 2013 umeabot <umeabot> 2.1.4-2.mga3
-+ Revision: 349053
-- Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild
-
-* Sat Jul 28 2012 malo <malo> 2.1.4-1.mga3
-+ Revision: 275408
-- update to version 2.1.4
-
-* Sat Jan 28 2012 malo <malo> 2.1.3-1.mga2
-+ Revision: 202747
-- new version 2.1.3
-- updated files and dependencies
-- dropped patches
-
-* Sat Jan 28 2012 malo <malo> 2.0.12-1.mga2
-+ Revision: 202742
-- fix devel group
-- spec clean-up after import from Fedora.
-- imported package docky
 
