@@ -22,7 +22,7 @@ BuildRequires:  gnome-sharp2-devel gnome-desktop-sharp-devel
 BuildRequires:  gnome-keyring-sharp gtk-sharp2-devel mono-addins-devel
 BuildRequires:  mono-devel ndesk-dbus-devel ndesk-dbus-glib-devel
 BuildRequires:  notify-sharp-devel
-BuildRequires:  libGConf2-devel
+BuildRequires:  pkgconfig(gconf-2.0)
 BuildRequires:  gio-sharp-devel
 BuildRequires:  dbus-sharp-devel dbus-sharp-glib-devel
 # native deps
