@@ -26,7 +26,7 @@ BuildRequires:  pkgconfig(gconf-2.0)
 BuildRequires:  gio-sharp-devel
 BuildRequires:  dbus-sharp-devel pkgconfig(dbus-sharp-glib-1.0)
 # native deps
-BuildRequires:  pkgconfig(glib-2.0) pkgconfig(gtk+-2.0
+BuildRequires:  pkgconfig(glib-2.0) pkgconfig(gtk+-2.0)
 BuildRequires:  gettext
 BuildRequires:  perl-XML-Parser
 BuildRequires:  intltool
