@@ -2,7 +2,7 @@
 
 Name:           docky
 Version:        2.1.4
-Release:        3
+Release:        4
 Summary:        Advanced shortcut bar written in Mono
 
 Group:          Graphical desktop/GNOME
@@ -16,6 +16,7 @@ Requires:       mono ndesk-dbus notify-sharp gtk2
 Requires:       hicolor-icon-theme
 Requires:       gio-sharp 
 Requires:       dbus-sharp dbus-sharp-glib
+Requires:       gnome-python-wnck
 
 # sharp deps
 BuildRequires:  gnome-sharp2-devel gnome-desktop-sharp-devel
