@@ -2,7 +2,7 @@
 
 Name:           docky
 Version:        2.1.4
-Release:        1
+Release:        2
 Summary:        Advanced shortcut bar written in Mono
 
 Group:          Graphical desktop/GNOME
