@@ -7,7 +7,7 @@ Summary:        Advanced shortcut bar written in Mono
 
 Group:          Graphical desktop/GNOME
 License:        GPLv3+
-URL:            http://wiki.go-docky.com
+URL:            https://wiki.go-docky.com
 Source0:        http://launchpad.net/docky/2.1/%{version}/+download/docky-%{version}.tar.xz
 
 Requires:       gnome-sharp2 gnome-desktop-sharp
