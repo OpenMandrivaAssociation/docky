@@ -18,6 +18,11 @@ Requires:       gio-sharp
 Requires:       dbus-sharp dbus-sharp-glib
 
 # sharp deps
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gnome-sharp2-devel gnome-desktop-sharp-devel
 BuildRequires:  gnome-keyring-sharp gtk-sharp2-devel mono-addins-devel
 BuildRequires:  mono-devel ndesk-dbus-devel ndesk-dbus-glib-devel
